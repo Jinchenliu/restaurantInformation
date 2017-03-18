@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".MainActivity">
+    <ImageView
+        android:id="@+id/image_cover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/restaurant_cover"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitStart"
+        android:adjustViewBounds="true"
+       />
+    <TextView
+        android:id="@+id/text_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/restaurant_name"
+        android:textSize="30sp"
+        android:textColor="@android:color/white"
+        android:paddingLeft="16dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingRight="16dp"
+        android:background="@color/transparentBlack"
+        android:layout_alignBottom="@id/image_cover"/>
+
+    <TextView
+        android:id="@+id/text_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/restaurant_description"
+        android:layout_below="@id/image_cover"
+        android:fontFamily="sans-serif-light"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"/>
+    <ImageView
+        android:id="@+id/image_tel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tel"
+        android:layout_below="@id/text_description"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"/>
+    <TextView
+        android:id="@+id/text_tel"
+        style="@style/textView"
+        android:text="@string/restaurant_tel"
+        android:layout_toRightOf="@id/image_tel"
+        android:layout_below="@id/text_description"
+        android:layout_alignTop="@id/image_tel" />
+    <ImageView
+        android:id="@+id/image_addr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/addr"
+        android:layout_below="@id/image_tel"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"/>
+    <TextView
+        android:id="@+id/text_addr"
+        style="@style/textView"
+        android:text="@string/restaurant_addr"
+        android:layout_toRightOf="@id/image_addr"
+        android:layout_below="@id/text_tel"
+        android:layout_alignTop="@id/image_addr" />
+    <ImageView
+        android:id="@+id/image_web"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/web"
+        android:layout_below="@id/image_addr"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"/>
+    <TextView
+        android:id="@+id/text_web"
+        style="@style/textView"
+        android:textColor="@color/blue"
+        android:text="@string/restaurant_web"
+        android:layout_toRightOf="@id/image_web"
+        android:layout_below="@id/text_addr"
+        android:textSize="14sp"
+        android:layout_alignTop="@id/image_web" />
+    <ImageView
+        android:id="@+id/image_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/time"
+        android:layout_below="@id/image_web"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"/>
+    <TextView
+        android:id="@+id/text_time"
+        style="@style/textView"
+        android:text="@string/restaurant_time"
+        android:layout_toRightOf="@id/image_time"
+        android:layout_below="@id/text_web"
+        android:layout_alignTop="@id/image_time" />
+    </RelativeLayout>

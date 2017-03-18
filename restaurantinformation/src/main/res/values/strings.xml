@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Restaurant Information</string>
+    <string name="restaurant_name">Riviera Shanghai</string>
+    <string name="restaurant_description">This is the newly-relocated mid-range Spanish restaurant. All the food is designed to be shared family style and eaten comfortably with chopsticks.</string>
+    <string name="restaurant_tel">12345678</string>
+    <string name="restaurant_addr">5/F,No.22 Zhongshan Lu</string>
+    <string name="restaurant_web">http://www.diningcity.cn/en/shanghai/el_willy_shanghai_restaurant</string>
+    <string name="restaurant_time">11:00-22:00</string>
+</resources>
